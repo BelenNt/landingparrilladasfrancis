@@ -4,7 +4,6 @@
 }
 
 body {
-
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -118,15 +117,33 @@ header {
     background-color: black;
     width: 100%;
 }
+.gallery{
+    padding: 10px;
+    display: flex;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    position: relative;
+}
+.card{
+    margin-right: 10px;
+    position: relative;
+    display: flex;
+    overflow-y: auto;
+}
+.card img{
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    margin-right: 10px;
+    position: relative;
 
+}
 
 @media screen and (max-width:768px) {
-    body {
-        padding-top: 70px;
-    }
-
     header {
-        height: 60px;
+        height: 70px;
     }
 
     .menubar {
@@ -152,7 +169,7 @@ header {
     .jumbotron {
         top: 80px;
         position: static;
-        width: 100%;
+        max-width: 100%;
         left: 0;
         justify-content: space-evenly;
         align-items: center;
@@ -167,11 +184,12 @@ header {
         margin: auto;
         background-color: black;
     }
+
     .icons {
         max-width: 40%;
         max-height: 40%;
         min-height: 40%;
-        }
+    }
 
     .control {
         max-width: 40%;
