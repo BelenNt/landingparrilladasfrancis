@@ -4,7 +4,7 @@
 }
 
 body {
-    
+
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    width: 100%;
+    max-width: 100%;
     background-color: #2d0303;
     position: fixed;
     top: 0;
@@ -33,7 +33,7 @@ header {
     line-height: 90px;
 }
 
-.products ul{
+.products ul {
     overflow: hidden;
     list-style: none;
     display: flex;
@@ -60,9 +60,65 @@ header {
     background-color: rgba(69, 11, 11, 0.437);
 }
 
-.navinput , .menubar {
+.navinput,
+.menubar {
     display: none;
 }
+
+.jumbotron {
+    padding: 40px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 70px;
+    float: left;
+    background-color: black;
+    color: white;
+    top: 0;
+    left: 0;
+}
+
+.fondo img {
+    max-height: 40%;
+    min-height: 40%;
+    width: 64%;
+    float: right;
+    padding: 20px;
+    margin: auto;
+    background-color: black;
+}
+
+.icons {
+    width: 20%;
+    background-color: #2d0303;
+    padding: 30px;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 4px;
+    color: white;
+    float: left;
+}
+
+.control {
+    width: 100%;
+    background-color: #2d0303;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+    font-size: 18px;
+    color: white;
+}
+
+.boton {
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    background-color: black;
+    width: 100%;
+}
+
 
 @media screen and (max-width:768px) {
     body {
@@ -73,7 +129,7 @@ header {
         height: 60px;
     }
 
-    .menubar{
+    .menubar {
         display: block;
         cursor: pointer;
         float: right;
@@ -90,38 +146,39 @@ header {
         flex-direction: column;
         align-items: center;
         clip-path: circle(0 at center);
-        background:#2d0303;
+        background: #2d0303;
     }
 
-    .jumbotron{
+    .jumbotron {
         top: 80px;
-        position: fixed;
+        position: static;
         width: 100%;
         left: 0;
         justify-content: space-evenly;
         align-items: center;
     }
-    .navinput:checked + .products ul{
+
+    .fondo img {
+        max-height: 40%;
+        min-height: 40%;
+        max-width: 20%;
+        float: right;
+        padding: 20px;
+        margin: auto;
+        background-color: black;
+    }
+    .icons {
+        max-width: 40%;
+        max-height: 40%;
+        min-height: 40%;
+        }
+
+    .control {
+        max-width: 40%;
+    }
+
+
+    .navinput:checked+.products ul {
         clip-path: circle(100% at center);
     }
-}
-.jumbotron{
-    padding: 30px;
-    width: 100%;
-    margin:auto;
-    margin-top: 70px;
-    float: left;
-    background-color: black;
-    color: white;
-    top: 0;
-    left: 0;
-}
-.fondo img{
-    max-height: 40%;
-    min-height: 40%;
-    max-width: 40%;
-    float:right;
-    padding: 20px;
-    margin: auto;
-    background-color: black;
 }
