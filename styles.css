@@ -253,8 +253,6 @@ footer {
         max-width: 100%;
 
     }
-
-
     .navinput:checked+.products ul {
         clip-path: circle(100% at center);
     }
