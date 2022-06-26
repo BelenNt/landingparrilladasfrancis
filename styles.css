@@ -145,7 +145,8 @@ header {
     display: block;
     overflow-y: auto;
 }
-.times{
+
+.times {
     padding: 40px;
     max-width: 100%;
     margin: auto;
@@ -154,12 +155,15 @@ header {
     left: 0;
     display: flex;
 }
-.map{
-    margin-top: 25px;
-    margin-bottom: 100px;
-    padding:20px;
+
+iframe {
+    margin: 0 auto;
+    bottom: 100px;
+    max-width: 100%;
+    float: left;
 }
-.time{
+
+.time {
     max-width: 100%;
     top: 0;
     left: 0;
@@ -172,24 +176,22 @@ header {
     margin: 20px;
     justify-content: right;
 }
-footer{
-    position:static;
-    bottom: 0;
+
+footer {
+    position: static;
     left: 0;
     right: 0;
-    background:#2d0303;
+    background: #2d0303;
     height: auto;
     max-width: 100%;
     padding-top: 40px;
 }
-.ficons img{
-    max-height: 20%;
-    min-height: 20%;
-    max-width: 10%;
-    float: left;
-    padding: 0 40px;
-    align-items: center;
 
+.ficons a img {
+    max-width: 80%;
+    padding: 0 40px;
+    background-color: #ffffff;
+    border-color: white;
 }
 
 
@@ -245,6 +247,11 @@ footer{
 
     .control {
         max-width: 40%;
+    }
+
+    .time {
+        max-width: 100%;
+
     }
 
 
